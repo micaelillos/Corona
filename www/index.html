@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <!-- Jquery-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="lib//jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.mobile-1.4.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.mobile-1.4.5.min.css">
+    <!-- Ionic-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <title>Corona Updates</title>
+</head>
+
+<body>
+  
+
+   <ion-app>
+    
+        <ion-tabs>
+            <ion-tab tab="music">
+                <ion-header translucent>
+                    <ion-toolbar color="primary">
+                        <ion-title>Corona Updates</ion-title>
+                    </ion-toolbar>
+                </ion-header>
+            
+                  <ion-content fullscreen>
+                    <ion-card>
+                      <img src="img/global.jpg" />
+                      <ion-card-header>
+                        <ion-card-title>Global Stats</ion-card-title>
+                      </ion-card-header>
+                      <ion-card-content>
+                    <div id="global">
+
+                    </div>
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-content>
+            </ion-tab>
+
+            <ion-tab tab="movies">
+                <ion-header translucent>
+                    <ion-toolbar color="primary">
+                        <ion-title>Country</ion-title>
+                    </ion-toolbar>
+                </ion-header>
+
+                <ion-content fullscreen class="ion-padding">
+                    <ion-item>
+                        <ion-label position="stacked">Enter Country <ion-text color="danger">*</ion-text></ion-label>
+                        <ion-input id="input" required type="text"></ion-input>
+                     
+                      </ion-item>
+                      <ion-button id="country" class="ion-margin">Submit</ion-button>
+
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle></ion-card-subtitle>
+                          <div >
+                          <ion-card-title ><div id="title"></div> <span id="image" style="float: right; margin-top: -45px;"></span></ion-card-title>
+                        </div>
+                        </ion-card-header>
+                        <ion-card-content>
+                       <div id="stats"> 
+
+                       </div>
+                        </ion-card-content>
+                      </ion-card>
+
+                </ion-content>
+            </ion-tab>
+
+            <ion-tab tab="games">
+                <ion-header translucent>
+                    <ion-toolbar color="primary">
+                        <ion-title>Information</ion-title>
+                    </ion-toolbar>
+                </ion-header>
+
+                <ion-content fullscreen class="ion-padding">
+                <!-- CARD 1-->
+                <ion-card>
+                    <img src="img/home.jpg" />
+                    <ion-card-header>
+                      <ion-card-title>STAY AT HOME!</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                Staying at home is essential not only for your well being rather for everone's well being.
+                Stay at home and save lives.
+                    </ion-card-content>
+                  </ion-card>
+                  <!-- cARD 2-->
+                  <ion-card>
+                    <img src="img/safe.jpg" />
+                    <ion-card-header>
+                      <ion-card-title>Follow Health Guidelines</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                    Remember to wash hands frequently and to avoid touching one's mouth or nose. Follow offical health guidlines.
+                    </ion-card-content>
+                  </ion-card>
+                </ion-content>
+            </ion-tab>
+          
+
+                <ion-tab-bar slot="bottom">
+                    <ion-tab-button tab="music">
+                        <ion-label>Global</ion-label>
+                        <ion-icon name="globe"></ion-icon>
+                    </ion-tab-button>
+                    <ion-tab-button tab="movies">
+                        <ion-label>Country</ion-label>
+                        <ion-icon name="map-outline"></ion-icon>
+                    </ion-tab-button>
+                    <ion-tab-button tab="games">
+                        <ion-label>Info</ion-label>
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                    </ion-tab-button>
+                </ion-tab-bar>
+                </ion-tabs>
+        </ion-tabs>
+    
+
+    </ion-app>
+</body>
+
+</html>

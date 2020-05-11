@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "CoronaUpdates",
+  "short_name": "CoronaUpdates",
+  "version": "com.micaelil",
+  "description": "A simple app that gives corona updates",
+  "author": "Micael Illos",
+  "icons": [],
+  "start_url": "index.html"
+}
