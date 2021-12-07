@@ -14,10 +14,6 @@
 
 This is a beauiful and light weight app to give the user global stats and stats per country while obtaining a minimal and sleek design. 
 <br>
-You can view the app online over
-<a href="https://covidapp.micaelil.com/">
- here
-</a>
 .
     <br>
  You can download the APK over 
